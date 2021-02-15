@@ -9,7 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Eureka.Nancy.API
+namespace Eureka.Nancy.Service1
 {
     public class Startup
     {
@@ -28,6 +28,7 @@ namespace Eureka.Nancy.API
 
             // Eureka - service name
             //services.AddHttpClient("someservice", client => client.BaseAddress = new Uri("http://someservice/")).AddServiceDiscovery();
+
 
         }
 

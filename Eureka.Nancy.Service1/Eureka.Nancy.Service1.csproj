@@ -3,8 +3,8 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <AssemblyName>Eureka.Nancy.API</AssemblyName>
-    <RootNamespace>Eureka.Nancy.API</RootNamespace>
+    <AssemblyName>Eureka.Nancy.Service1</AssemblyName>
+    <RootNamespace>Eureka.Nancy.Service1</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,10 +12,15 @@
     <PackageReference Include="Microsoft.AspNetCore.Owin" Version="3.1.12" />
     <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="2.2.0" />
     <PackageReference Include="Nancy" Version="2.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="Steeltoe.Common.Hosting" Version="3.0.2" />
     <PackageReference Include="Steeltoe.Discovery.ClientCore" Version="3.0.2" />
     <PackageReference Include="Steeltoe.Discovery.Eureka" Version="3.0.2" />
     <PackageReference Include="System.Net.Http.Json" Version="3.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Eureka.Nancy.Service2\Eureka.Nancy.Service2.csproj" />
   </ItemGroup>
 
 </Project>

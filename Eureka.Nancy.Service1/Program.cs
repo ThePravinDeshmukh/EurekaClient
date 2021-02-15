@@ -2,10 +2,12 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Steeltoe.Common.Hosting;
+using Steeltoe.Discovery.Client;
+using Steeltoe.Discovery.Eureka;
 using System;
 using System.IO;
 
-namespace Eureka.Nancy.API
+namespace Eureka.Nancy.Service1
 {
     public class Program
     {
@@ -27,6 +29,7 @@ namespace Eureka.Nancy.API
             {
                 configApp.AddJsonFile("appsettings.json", optional: true);
             })
+                    .AddServiceDiscovery(options => options.UseEureka())
 
             .UseCloudHosting(50501) // For Local
             ;
